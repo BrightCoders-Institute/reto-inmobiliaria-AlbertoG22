@@ -1,8 +1,4 @@
-import {
-  StyleSheet,
-  Text,
-  View,
-} from 'react-native';
+import { StyleSheet, Text, View, } from 'react-native';
 import { HomeScreen } from './screens/HomeScreen';
 
 function App() {

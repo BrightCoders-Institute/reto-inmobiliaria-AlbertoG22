@@ -1,7 +1,8 @@
 [
     {
+        "id": 1,
         "name": "Casa Caleta",
-        "address": "Puerto Vallarta, Jalisco, México",
+        "address": "Puerto Vallarta, Jal.",
         "numOfRooms": "6",
         "numOfBaths": "6.5",
         "surface": "1000 m2",
@@ -11,8 +12,9 @@
         "image": "https://a0.muscache.com/im/pictures/56dcaa0e-d256-4c37-a71e-ea9a4f4a7e95.jpg?im_w=1200"
     },
     {
+        "id": 2,
         "name": "Estate Taurus",
-        "address": "Punta de Mita, Nayarit, México",
+        "address": "Punta de Mita, Nay.",
         "numOfRooms": "5",
         "numOfBaths": "5",
         "surface": "1000 m2",
@@ -22,8 +24,9 @@
         "image": "https://a0.muscache.com/im/pictures/miso/Hosting-868114297669672758/original/21fbbfdc-9e48-4c62-8083-20b7d8fdd596.jpeg?im_w=1200"
     },
     {
+        "id": 3,
         "name": "Departamento Elliot",
-        "address": "Puerto Vallarta, Jalisco, México",
+        "address": "Puerto Vallarta, Jal.",
         "numOfRooms": "3",
         "numOfBaths": "3",
         "surface": "500 m2",
@@ -33,8 +36,9 @@
         "image": "https://a0.muscache.com/im/pictures/miso/Hosting-51484829/original/4ebace0f-1bba-4474-a2ed-b28364876706.jpeg?im_w=1200"
     },
     {
+        "id": 4,
         "name": "Park Royal Hotel & Resorts",
-        "address": "Mazatlán, Sinaloa, México",
+        "address": "Mazatlán, Sin.",
         "numOfRooms": "3",
         "numOfBaths": "2",
         "surface": "200 m2",
@@ -44,8 +48,9 @@
         "image": "https://a0.muscache.com/im/pictures/b99d4612-8969-4319-866e-00018b702c83.jpg?im_w=1200"
     },
     {
+        "id": 5,
         "name": "Villa Chavez",
-        "address": "Cabo San Lucas, Baja California Sur, México",
+        "address": "Cabo San Lucas, BCS",
         "numOfRooms": "8",
         "numOfBaths": "8.5",
         "surface": "2000 m2",
@@ -55,8 +60,9 @@
         "image": "https://a0.muscache.com/im/pictures/miso/Hosting-736227237749038373/original/4ae8ea3f-4c7b-43a7-8621-e21f1b6d693e.jpeg?im_w=1200"
     },
     {
+        "id": 6,
         "name": "Casa Brisa",
-        "address": "Punta de Mita, Nayarit, México",
+        "address": "Punta de Mita, Nay.",
         "numOfRooms": "7",
         "numOfBaths": "8",
         "surface": "5000 m2",
