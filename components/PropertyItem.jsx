@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { View, Text, ImageBackground, StyleSheet } from 'react-native';
 import { IconComponent } from './IconComponent';
+import { RatingStars } from './RatingStars';
 
 export const PropertyItem = ({ property }) => {
 
@@ -10,34 +11,38 @@ export const PropertyItem = ({ property }) => {
     <View style={styles.container}>
 
       <View style={styles.imageContainer}>
-        <ImageBackground 
-          source={{ uri: propData.image }}
-          style={styles.backgroundImage}
-        >
-          <View>
-            <IconComponent 
-              name="star"
-              size={25} 
-              color="yellow" 
-              text={propData.qualification} 
-              textColor='black' 
-            />
-          </View>
-        </ImageBackground>
+        {/* <View style={{}}> */}
+          <ImageBackground 
+            source={{ uri: propData.image }}
+            style={styles.backgroundImage}
+          >
+            <View style={styles.ratingStarsContainer}>
+              {/* <IconComponent 
+                name="star"
+                size={25} 
+                color="yellow" 
+                text={propData.qualification} 
+                textColor='black' 
+              /> */}
+              <RatingStars data={propData} />
+            </View>
+          </ImageBackground>
+        {/* </View> */}
       </View>
       
       <View style={styles.contentContainer}>
         <View>
-          <Text>{propData.name}</Text>
+          <Text style={styles.text}>{propData.name}</Text>
         </View>
 
-        <View>
-          <IconComponent 
-            name="location"
-            size={25} 
+        <View style={styles.locationSection}>
+          <IconComponent
+            style={[styles.algo]}
+            name="location-outline"
+            size={20} 
             color="black" 
             text={propData.address} 
-            textColor='black' 
+            extraStyles={{color: 'black', fontSize: 12}}
           />
         </View>
 
@@ -47,26 +52,26 @@ export const PropertyItem = ({ property }) => {
             size={25} 
             color="gray" 
             text={propData.numOfRooms} 
-            textColor='gray'
+            extraStyles={{color: 'black', fontWeight: 'bold', fontSize: 14}}
           />
           <IconComponent 
             name="bathtub"
             size={25} 
             color="gray" 
             text={propData.numOfBaths} 
-            textColor='gray' 
+            extraStyles={{color: 'black', fontWeight: 'bold', fontSize: 14}} 
           />
           <IconComponent 
             name="vector-square"
             size={25} 
             color="gray" 
             text={propData.surface} 
-            textColor='gray' 
+            extraStyles={{color: 'black', fontWeight: 'bold', fontSize: 14}} 
           />
         </View>
 
         <View>
-          <Text>{`$${propData.rentalCost}/día`}</Text>
+          <Text style={styles.text}>{`$${propData.rentalCost}/día`}</Text>
         </View>
       
       </View>
@@ -91,11 +96,22 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     marginBottom: 25,
-    
-    backgroundColor: 'red'
+    height: 130,
+    backgroundColor: '#F0F8FF',
+    // backgroundColor: '#052F59',
+    borderRadius: 10,
+  },
+  locationSection: {
+    justifyContent: 'flex-start'
   },
   imageContainer: {
     flex: 1,
+    // flexDirection: 'column',
+    // alignContent: 'space-between',
+    // justifyContent: 'center',
+    // alignItems: 'center',
+    // backgroundColor: 'red',
+    padding: 10
   },
   backgroundImage: {
     // resizeMode: 'cover',
@@ -104,6 +120,7 @@ const styles = StyleSheet.create({
     // borderRadius: 50,
 
     flex: 1,
+    // width: 120,
     width: '100%',
     height: '100%',
   },
@@ -114,10 +131,32 @@ const styles = StyleSheet.create({
     // backgroundColor: 'blue'
 
     flex: 2,
-    marginLeft: 20, // separar texto de imagen
+    flexDirection: 'column',
+    justifyContent: 'space-around',
+    height: '100%',
+    marginLeft: 10, // separar texto de imagen
+    fontWeight: 'bold'
+
+    // alignContent: 'space-between',
+    // backgroundColor: 'green',
   },
   iconsContainer: {
     display: 'flex',
     flexDirection: 'row',
+    justifyContent: 'space-between'
   },
+  text: {
+    fontWeight: 'bold',
+    fontSize: 16,
+    color: 'black'
+  },
+  ratingStarsContainer: {
+    flex: 1,
+    display: 'flex',
+    justifyContent: 'flex-end',
+    alignItems: 'center',
+    paddingBottom: 8,
+    // alignContent: 'center',
+    // backgroundColor: 'red'
+  }
 });
