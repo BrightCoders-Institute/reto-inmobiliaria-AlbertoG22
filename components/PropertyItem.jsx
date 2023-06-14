@@ -15,6 +15,7 @@ export const PropertyItem = ({ property }) => {
           <ImageBackground 
             source={{ uri: propData.image }}
             style={styles.backgroundImage}
+            borderRadius={10}
           >
             <View style={styles.ratingStarsContainer}>
               {/* <IconComponent 
@@ -49,22 +50,22 @@ export const PropertyItem = ({ property }) => {
         <View style={styles.iconsContainer}>
           <IconComponent 
             name="bed"
-            size={25} 
-            color="gray" 
+            size={20} 
+            color="#4A4A4A" 
             text={propData.numOfRooms} 
             extraStyles={{color: 'black', fontWeight: 'bold', fontSize: 14}}
           />
           <IconComponent 
             name="bathtub"
-            size={25} 
-            color="gray" 
+            size={20} 
+            color="#4A4A4A" 
             text={propData.numOfBaths} 
             extraStyles={{color: 'black', fontWeight: 'bold', fontSize: 14}} 
           />
           <IconComponent 
             name="vector-square"
-            size={25} 
-            color="gray" 
+            size={20} 
+            color="#4A4A4A" 
             text={propData.surface} 
             extraStyles={{color: 'black', fontWeight: 'bold', fontSize: 14}} 
           />
@@ -117,12 +118,13 @@ const styles = StyleSheet.create({
     // resizeMode: 'cover',
     // width: 150,
     // height: 150,
-    // borderRadius: 50,
-
+    
     flex: 1,
+    justifyContent: 'center',
     // width: 120,
     width: '100%',
     height: '100%',
+    borderRadius: 50,
   },
   contentContainer: {
     // display: 'flex',

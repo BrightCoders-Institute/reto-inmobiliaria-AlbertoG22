@@ -12,7 +12,7 @@ export const ListItems = () => {
   return (
     <ScrollView style={styles.container}>
       { propertiesData.map((item) => (
-        <PropertyItem property={item} />
+        <PropertyItem key={item.id} property={item} />
       )) }
     </ScrollView>
     // <Text>hola</Text>
