@@ -1,34 +1,27 @@
 import React, { useState } from 'react';
-import { View, Text, ImageBackground, StyleSheet } from 'react-native';
+import { View, Text, ImageBackground, StyleSheet, Pressable } from 'react-native';
 import { IconComponent } from './IconComponent';
 import { RatingStars } from './RatingStars';
+import HeartIcon from 'react-native-vector-icons/FontAwesome';
 
 export const PropertyItem = ({ property }) => {
 
   const [propData, setPropData] = useState(property);
+  const [isLiked, setIsLiked] = useState(false);
 
   return (
     <View style={styles.container}>
 
       <View style={styles.imageContainer}>
-        {/* <View style={{}}> */}
-          <ImageBackground 
-            source={{ uri: propData.image }}
-            style={styles.backgroundImage}
-            borderRadius={10}
-          >
-            <View style={styles.ratingStarsContainer}>
-              {/* <IconComponent 
-                name="star"
-                size={25} 
-                color="yellow" 
-                text={propData.qualification} 
-                textColor='black' 
-              /> */}
-              <RatingStars data={propData} />
-            </View>
-          </ImageBackground>
-        {/* </View> */}
+        <ImageBackground 
+          source={{ uri: propData.image }}
+          style={styles.backgroundImage}
+          borderRadius={10}
+        >
+          <View style={styles.ratingStarsContainer}>
+            <RatingStars data={propData} />
+          </View>
+        </ImageBackground>
       </View>
       
       <View style={styles.contentContainer}>
@@ -71,8 +64,20 @@ export const PropertyItem = ({ property }) => {
           />
         </View>
 
-        <View>
+        <View style={styles.priceHeartContainer}>
           <Text style={styles.text}>{`$${propData.rentalCost}/día`}</Text>
+          <Pressable
+            style={styles.likeButton}  
+            onPress={() => setIsLiked(!isLiked)}
+          >
+            <View style={styles.circleHeart}>
+              <HeartIcon 
+                name="heart"
+                size={18}
+                color={isLiked ? "red" : "white"}
+              />
+            </View>
+          </Pressable>
         </View>
       
       </View>
@@ -82,24 +87,12 @@ export const PropertyItem = ({ property }) => {
 
 const styles = StyleSheet.create({
   container: {
-    // display: 'flex',
-    // flexDirection: 'row',
-
-    // marginBottom: 25,
-    // // padding: 20,
-    // // alignItems: '',
-    // borderRadius: 8,
-    
-    // justifyContent: 'space-evenly',
-    // backgroundColor: 'red'
-
     flex: 1,
     flexDirection: 'row',
     alignItems: 'center',
     marginBottom: 25,
     height: 130,
     backgroundColor: '#F0F8FF',
-    // backgroundColor: '#052F59',
     borderRadius: 10,
   },
   locationSection: {
@@ -107,40 +100,22 @@ const styles = StyleSheet.create({
   },
   imageContainer: {
     flex: 1,
-    // flexDirection: 'column',
-    // alignContent: 'space-between',
-    // justifyContent: 'center',
-    // alignItems: 'center',
-    // backgroundColor: 'red',
     padding: 10
   },
   backgroundImage: {
-    // resizeMode: 'cover',
-    // width: 150,
-    // height: 150,
-    
     flex: 1,
     justifyContent: 'center',
-    // width: 120,
     width: '100%',
     height: '100%',
     borderRadius: 50,
   },
   contentContainer: {
-    // display: 'flex',
-    // flexDirection: 'column',
-    // justifyContent: 'space-around',
-    // backgroundColor: 'blue'
-
     flex: 2,
     flexDirection: 'column',
     justifyContent: 'space-around',
     height: '100%',
     marginLeft: 10, // separar texto de imagen
     fontWeight: 'bold'
-
-    // alignContent: 'space-between',
-    // backgroundColor: 'green',
   },
   iconsContainer: {
     display: 'flex',
@@ -158,7 +133,15 @@ const styles = StyleSheet.create({
     justifyContent: 'flex-end',
     alignItems: 'center',
     paddingBottom: 8,
-    // alignContent: 'center',
-    // backgroundColor: 'red'
+  },
+  priceHeartContainer: {
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'space-between'
+  },
+  circleHeart: {
+    borderRadius: 50,
+    backgroundColor: '#20961E',
+    padding: 6,
   }
 });

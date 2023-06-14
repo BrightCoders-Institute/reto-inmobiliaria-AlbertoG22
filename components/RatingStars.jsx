@@ -6,11 +6,11 @@ export const RatingStars = ({ data }) => {
   return (
     <View style={styles.container}>
         <IconComponent 
-            name="star"
-            size={12} 
-            color="#FFB730" 
-            text={data.qualification} 
-            extraStyles={{color: '#876019', fontWeight: 'bold', fontSize: 12}}
+          name="star"
+          size={12} 
+          color="#FFB730" 
+          text={data.qualification} 
+          extraStyles={{color: '#876019', fontWeight: 'bold', fontSize: 12}}
         />
     </View>
   );
@@ -18,11 +18,11 @@ export const RatingStars = ({ data }) => {
 
 const styles = StyleSheet.create({
     container: {
-        borderRadius: 15,
-        backgroundColor: '#FFCFAC',
-        width: '50%',
-        height: '26%',
-        alignItems: 'center',
-        justifyContent: 'center',
+      borderRadius: 15,
+      backgroundColor: '#FFEAC5',
+      width: '50%',
+      height: '26%',
+      alignItems: 'center',
+      justifyContent: 'center',
     }
 });

@@ -4,6 +4,7 @@ import Icon from 'react-native-vector-icons/FontAwesome';
 import LocIcon from 'react-native-vector-icons/Ionicons';
 import SurfaceIcon from 'react-native-vector-icons/FontAwesome5';
 
+
 export const IconComponent = ({ text, name, color, size, extraStyles }) => {
 
   const chooseIcon = (name) => {
@@ -26,9 +27,6 @@ const styles = StyleSheet.create({
   container: {
     display: 'flex',
     flexDirection: 'row',
-    // justifyContent: 'center',
-    // alignContent: 'space-between',
     alignItems: 'center',
-    // backgroundColor: 'green',
   }
 });

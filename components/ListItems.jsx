@@ -7,26 +7,14 @@ import { PropertyItem } from './PropertyItem';
 export const ListItems = () => {
 
   const [propertiesData, setPropertiesData] = useState(data);
-  // console.log(data);
 
   return (
-    <ScrollView style={styles.container}>
+    <ScrollView>
+
       { propertiesData.map((item) => (
         <PropertyItem key={item.id} property={item} />
       )) }
+
     </ScrollView>
-    // <Text>hola</Text>
   );
 };
-
-const styles = StyleSheet.create({
-  container: {
-    // display: 'flex',
-    // flexDirection: 'row',
-
-    // backgroundColor: 'green',
-    // marginTop: 20,
-    // marginLeft: 30,
-    // marginRight: 30
-  }
-});
