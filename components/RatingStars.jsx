@@ -17,12 +17,12 @@ export const RatingStars = ({ data }) => {
 };
 
 const styles = StyleSheet.create({
-    container: {
-      borderRadius: 15,
-      backgroundColor: '#FFEAC5',
-      width: '50%',
-      height: '26%',
-      alignItems: 'center',
-      justifyContent: 'center',
-    }
+  container: {
+    borderRadius: 15,
+    backgroundColor: '#FFEAC5',
+    width: '50%',
+    height: '26%',
+    alignItems: 'center',
+    justifyContent: 'center',
+  }
 });
