@@ -40,7 +40,7 @@ Para ejecutar el proyecto en IOS:
 `npx react-native run-ios`
 
 ## Resultado
-![App Inmobiliaria]('./img/app-inmobiliaria.jpeg')
+![App Inmobiliaria](/img/app-inmobiliaria.jpeg)
 
 ## Créditos
 - Alberto García (*AlbertoG22*)
