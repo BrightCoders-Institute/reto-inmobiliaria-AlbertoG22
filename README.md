@@ -40,10 +40,10 @@ Para ejecutar el proyecto en IOS:
 `npx react-native run-ios`
 
 ## Resultado
-![App Inmobiliaria](/img/app-inmobiliaria.jpeg)
+<img src="img/app-inmobiliaria.jpeg" alt="app inmobiliaria" width="360" height="780">
 
 ## Créditos
-- Alberto García (*AlbertoG22*)
+- [Alberto García (*AlbertoG22*)](https://github.com/AlbertoG22)
 
 ## Badges
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/0f579a010cf543beab1a846035db9a53)](https://app.codacy.com/gh/BrightCoders-Institute/reto-inmobiliaria-AlbertoG22/dashboard)
