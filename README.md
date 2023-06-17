@@ -5,7 +5,7 @@
 * [Descripción](#descripción)
 * [Instalar dependencias](#instalar-dependencias)
 * [Correr proyecto](#Correr-proyecto)
-* [¿Cómo usar el proyecto?](#¿Cómo-usar-el-proyecto?)
+* [Resultado](#Resultado)
 * [Créditos](#Créditos)
 
 ## Descripción
@@ -40,7 +40,7 @@ Para ejecutar el proyecto en IOS:
 `npx react-native run-ios`
 
 ## Resultado
-![App Inmobiliaria]('./img/App Inmobiliaria.jpeg')
+![App Inmobiliaria]('./img/app-inmobiliaria.jpeg')
 
 ## Créditos
 - Alberto García (*AlbertoG22*)
