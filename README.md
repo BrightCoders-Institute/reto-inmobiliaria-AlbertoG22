@@ -9,7 +9,18 @@
 * [Créditos](#Créditos)
 
 ## Descripción
+Una empresa inmobiliaria necesita una App para poder mostrar a sus clientes las propiedades que tiene disponibles en renta.
 
+1. La App debe permitir a la empresa inmobiliaria mostrar un listado de todas las propiedades disponibles para renta.
+2. Para cada propiedad, se debe mostrar la siguiente información:
+   - Nombre
+   - Dirección
+   - Número de habitaciones
+   - Número de baños
+   - Superficie
+   - Costo de renta mensual
+   - Evaluación o calificación de la propiedad
+   - Icono que permita al usuario marcar las propiedades que le gustan.
 
 ## Instalar dependencias 
 En el proyecto se utilizaron las dependencias:
@@ -22,17 +33,14 @@ Una vez que ya se instalaron las dependencias, para ejecutar el *ambiente de pru
 `npm test` 
 
 ## Correr proyecto
-<!-- El proyecto consiste en un archivo JavaScript llamado *index.js* que contiene el código para el juego. En él se tiene la clase `JuegoDeLaVida`, en la cual se tienen diferentes métodos tanto para la creación de la cuadrícula, el cálculo de los vecinos, la modificación de las células vivas o muertas, entre otras.
+Para ejecutar el proyecto en Android:
+`npx react-native run-android`
 
-Para correr el juego hay dos opciones:
-- *Extensión* ***Code Runner:*** En el edito Visual Studio Code, instalamos la extensión *Code Runner* (https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner), una vez instalada, simplemente abrimos el archivo *index.js* y presionamos las teclas **Ctrl+Alt+N** o damos click en el ícono "**▷**" ubicado en la parte superior derecha. Esto abre una ventana donde se ve el resultado de la ejecución.
-- Usando **NodeJS**: Para esta opción se debe tener instalada la herramienta Node.Js. En esta opción no se necesitan extensiones adicionales. Simplemente se abre una terminal dentro del proyecto, entramos a la carpeta /src/ (*`cd src`*) y ejecutamos el comando **node index.js** 
-Esto ejecuta el código js y nos muestra la salida en consola. -->
+Para ejecutar el proyecto en IOS:
+`npx react-native run-ios`
 
-## ¿Cómo usar el proyecto?
-<!-- Una vez que se ejecuta el proyecto, podremos ver las generaciones de células, desde la primera (desde donde parten las demás), como las siguientes que se irán calculando con base en las reglas del juego. 
-
-**Nota:** La cantidad de generaciones que se van a calcular será el número que le pasemos como argumento al método `play()`. -->
+## Resultado
+![App Inmobiliaria]('./img/App Inmobiliaria.jpeg')
 
 ## Créditos
 - Alberto García (*AlbertoG22*)
