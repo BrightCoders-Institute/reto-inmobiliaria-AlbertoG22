@@ -4,7 +4,7 @@ import { IconComponent } from './IconComponent';
 
 export const RatingStars = ({ data }) => {
   return (
-    <View style={styles.container}>
+    <View style={styles.container} testID='ratingStars'>
         <IconComponent 
           name="star"
           size={12} 

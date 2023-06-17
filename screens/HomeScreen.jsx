@@ -4,7 +4,7 @@ import { ListItems } from '../components/ListItems';
 
 export const HomeScreen = () => {
     return (
-        <View style={styles.container}>
+        <View style={styles.container} testID='homeScreen'>
             <ListItems />
         </View>
     );

@@ -10,7 +10,7 @@ export const PropertyItem = ({ property }) => {
   const [isLiked, setIsLiked] = useState(false);
 
   return (
-    <View style={styles.container}>
+    <View style={styles.container} testID='propertyItem'>
 
       <View style={styles.imageContainer}>
         <ImageBackground 

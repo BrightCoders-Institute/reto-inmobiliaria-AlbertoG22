@@ -9,7 +9,7 @@ export const ListItems = () => {
   const [propertiesData, setPropertiesData] = useState(data);
 
   return (
-    <ScrollView>
+    <ScrollView testID='listItems'>
 
       { propertiesData.map((item) => (
         <PropertyItem key={item.id} property={item} />

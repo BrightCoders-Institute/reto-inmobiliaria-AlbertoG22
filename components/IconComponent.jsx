@@ -16,7 +16,7 @@ export const IconComponent = ({ text, name, color, size, extraStyles }) => {
   };
 
   return (
-    <View style={styles.container}>
+    <View style={styles.container} testID='iconComponent'>
       { chooseIcon(name) }
       <Text style={[{paddingLeft: 8}, extraStyles]}>{text}</Text>
     </View>
